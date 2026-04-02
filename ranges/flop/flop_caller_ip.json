@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "role": "caller_ip",
+    "description": "Flop strategy for Caller Ip",
+    "note": "Probabilities for first actions (check vs bet sizing)."
+  },
+  "board_texture": {
+    "dry_static": {
+      "description": "Boards desconectados (ej. K-7-2 rainbow). Poca equity para el rival.",
+      "hand_categories": {
+        "made_premium": {
+          "check": 0.2,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.8,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "made_marginal": {
+          "check": 0.8,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.2,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "strong_draw": {
+          "check": 0.3,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.7,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "weak_draw": {
+          "check": 0.5,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.5,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "total_miss": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        }
+      }
+    },
+    "wet_dynamic": {
+      "description": "Boards muy conectados (ej. J-T-9 con colores).",
+      "hand_categories": {
+        "made_premium": {
+          "check": 0.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 1.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "made_marginal": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "strong_draw": {
+          "check": 0.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 1.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "weak_draw": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "total_miss": {
+          "check": 0.7,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.3,
+          "bet_200": 0.0
+        }
+      }
+    },
+    "monotone": {
+      "description": "Boards con tres cartas del mismo palo.",
+      "hand_categories": {
+        "made_premium": {
+          "check": 0.2,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.8,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "made_marginal": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "strong_draw": {
+          "check": 0.4,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.6,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "weak_draw": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "total_miss": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        }
+      }
+    },
+    "paired": {
+      "description": "Boards doblados (ej. J-J-4).",
+      "hand_categories": {
+        "made_premium": {
+          "check": 0.2,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.8,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "made_marginal": {
+          "check": 0.8,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.2,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "strong_draw": {
+          "check": 0.3,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.7,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "weak_draw": {
+          "check": 0.5,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.5,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        },
+        "total_miss": {
+          "check": 1.0,
+          "bet_10": 0.0,
+          "bet_25": 0.0,
+          "bet_33": 0.0,
+          "bet_50": 0.0,
+          "bet_75": 0.0,
+          "bet_100": 0.0,
+          "bet_125": 0.0,
+          "bet_200": 0.0
+        }
+      }
+    }
+  }
+}
