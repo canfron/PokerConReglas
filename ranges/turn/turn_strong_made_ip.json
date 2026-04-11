@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "role": "turn_strong_made_ip",
+    "description": "Turn ranges for strong made hands in IP position (NL10).",
+    "note": "Values are approximate GTO percentages for betting on the turn."
+  },
+  "board_texture": {
+    "dry_static": {
+      "description": "Boards disconnected (e.g., K-7-2 rainbow).",
+      "hand_categories": {
+        "top_pair_high_kicker": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "top_pair_medium_kicker": {
+          "bet_33": 0.33,
+          "bet_50": 0.50
+        },
+        "set": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        },
+        "flush_draw_completed": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "straight_completed": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        }
+      }
+    },
+    "wet_dynamic": {
+      "description": "Boards connected (e.g., J-T-9 with colors).",
+      "hand_categories": {
+        "top_pair_high_kicker": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "top_pair_medium_kicker": {
+          "bet_33": 0.33,
+          "bet_50": 0.50
+        },
+        "set": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        },
+        "flush_draw_completed": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "straight_completed": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        }
+      }
+    },
+    "monotone": {
+      "description": "Boards with three cards of the same suit.",
+      "hand_categories": {
+        "top_pair_high_kicker": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "top_pair_medium_kicker": {
+          "bet_33": 0.33,
+          "bet_50": 0.50
+        },
+        "set": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        },
+        "flush_draw_completed": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "straight_completed": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        }
+      }
+    },
+    "paired": {
+      "description": "Paired boards (e.g., J-J-4).",
+      "hand_categories": {
+        "top_pair_high_kicker": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "top_pair_medium_kicker": {
+          "bet_33": 0.33,
+          "bet_50": 0.50
+        },
+        "set": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        },
+        "flush_draw_completed": {
+          "bet_50": 0.50,
+          "bet_75": 0.75
+        },
+        "straight_completed": {
+          "bet_75": 0.75,
+          "bet_100": 1.00
+        }
+      }
+    }
+  }
+}
